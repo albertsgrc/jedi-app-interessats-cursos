@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jedi Recluting</string>
+    <string name="mailHint">Correo electrónico</string>
+    <string name="name">Nombre</string>
+    <string name="surname">Apellidos</string>
+    <string name="title_section3">Seguridad informática</string>
+    <string name="send">Envía</string>
+    <string name="welcomeText">Entra en Jedi!</string>
+    <string name="user_list_title">Lista de interesados</string>
+    <string name="navigation_drawer_close">Abre la barra de navegación</string>
+    <string name="navigation_drawer_open">Cierra la barra de navegación</string>
+    <string name="txtSubjectTitle">Nombre</string>
+    <string name="txtMailTitle">Correo</string>
+    <string name="txtCourseTitle">Curso</string>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Jedi Recluting</string>
+
+    <string name="title_section1">HTML</string>
+    <string name="title_section2">Android</string>
+    <string name="title_section3">Seguretat informàtica</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="send">Envia</string>
+    <string name="mailHint">Correu electrònic</string>
+    <string name="surname">Cognoms</string>
+    <string name="name">Nom</string>
+    <string name="welcomeText">Entra a Jedi!</string>
+    <string name="user_list_title">Llista d\'interessats</string>
+    <string name="navigation_drawer_open">Obre la barra de navegació</string>
+    <string name="navigation_drawer_close">Tanca la barra de navegació</string>
+
+    <string name="Menu">Menú</string>
+    <string name="txtSubjectTitle">Nom</string>
+    <string name="txtMailTitle">Correu</string>
+    <string name="txtCourseTitle">Curs</string>
+    <string name="txtDateTitle">Data</string>
+</resources>

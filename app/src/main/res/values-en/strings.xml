@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jedi Recluting</string>
+    <string name="mailHint">Email</string>
+    <string name="name">Name</string>
+    <string name="send">Send</string>
+    <string name="surname">Surnames</string>
+    <string name="title_section3">Computer Security</string>
+    <string name="welcomeText">Join Jedi!</string>
+    <string name="user_list_title">Interested List</string>
+    <string name="navigation_drawer_close">Open the navigation bar</string>
+    <string name="navigation_drawer_open">Close the navigation bar</string>
+    <string name="Menu">Menu</string>
+    <string name="txtCourseTitle">Course</string>
+    <string name="txtMailTitle">Mail</string>
+    <string name="txtSubjectTitle">Name</string>
+    <string name="txtDateTitle">Date</string>
+</resources>
