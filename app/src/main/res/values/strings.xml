@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">Jedi Recluting</string>
 
-    <string name="title_section1">HTML</string>
-    <string name="title_section2">Android</string>
-    <string name="title_section3">Seguretat informàtica</string>
+    <string name="title_section1">Cursos</string>
+    <string name="title_section2">Admin</string>
 
     <string name="action_settings">Settings</string>
     <string name="send">Envia</string>
@@ -20,4 +19,7 @@
     <string name="txtMailTitle">Correu</string>
     <string name="txtCourseTitle">Curs</string>
     <string name="txtDateTitle">Data</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

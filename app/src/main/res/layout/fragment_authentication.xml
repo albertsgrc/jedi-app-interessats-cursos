@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jedi.upc.cursosinteressats.SendDataFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:layout_width="match_parent" android:layout_height="223dp"
+        android:text="Entra la contrasenya"
+        android:id="@+id/pwd"
+        android:textStyle="bold"
+        android:textSize="80px"
+        android:textAlignment="gravity"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="269dp"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <EditText
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:ems="10"
+            android:id="@+id/pwdInput"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Envia"
+            android:id="@+id/pwdOkBtn"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="15dp" />
+    </LinearLayout>
+
+</FrameLayout>

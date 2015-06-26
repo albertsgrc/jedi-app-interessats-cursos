@@ -27,7 +27,7 @@ public class BaseDades extends SQLiteOpenHelper {
             "date timestamp NOT NULL" + ")";
 
     public BaseDades(Context con) {
-        super(con, BD_NAME, null, BD_VERSION);
+        super(con, BD_NAME, null, BD_VERSION); //crea BD si no existe
         context = con;
     }
 

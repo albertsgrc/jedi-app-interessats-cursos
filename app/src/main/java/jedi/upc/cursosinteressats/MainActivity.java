@@ -61,7 +61,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
     public void onNavigationDrawerItemSelected(int position) {
         Fragment f;
         switch (position) {
-            case 3: f = new UserListFragment(); break;
+            case 1: f = new SendDataFragment(); break;
             default: f = new MainFragment();
         }
 

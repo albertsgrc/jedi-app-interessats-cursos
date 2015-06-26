@@ -88,9 +88,8 @@ public class NavigationDrawerFragment extends Fragment {
                                    android.R.layout.simple_list_item_activated_1,
                                    android.R.id.text1,
                                    new String[] {getString(R.string.title_section1),
-                                                 getString(R.string.title_section2),
-                                                 getString(R.string.title_section3),
-                                                 getString(R.string.user_list_title)}));
+                                           getString(R.string.title_section2)
+                                                 }));
     }
 
     public boolean isDrawerOpen() {
@@ -179,9 +178,8 @@ public class NavigationDrawerFragment extends Fragment {
     public String computeTitle() {
         switch (actPos) {
             case 0: return getString(R.string.title_section1);
-            case 1: return getString(R.string.title_section2);
-            case 2: return getString(R.string.title_section3);
-            case 3: return getString(R.string.user_list_title);
+            case 1: return "admin";
+
         }
         return "";
     }
