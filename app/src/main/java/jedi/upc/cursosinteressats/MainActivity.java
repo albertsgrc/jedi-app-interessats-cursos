@@ -40,7 +40,7 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
-
+    private Fragment f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,13 +59,16 @@ public class MainActivity extends Activity implements NavigationDrawerFragment.N
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
-        Fragment f;
         switch (position) {
             case 1: f = new SendDataFragment(); break;
             default: f = new MainFragment();
         }
 
         getFragmentManager().beginTransaction().replace(R.id.container, f).commit();
+    }
+
+    public void userConfirmed() {
+        ((MainFragment) f).saveUser();
     }
 
     public void restoreActionBar() {

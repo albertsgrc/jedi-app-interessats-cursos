@@ -21,15 +21,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 
 public class MainFragment extends Fragment {
-    private static String posToName[] = new String[] {"", "HTML, CSS i Javascript", "Android", "Seguretat Informàtica"};
     public SharedPreferences prefs;
     public String lang = "ca";
     public Fragment f;
     public MainFragment() {}
+
+    private String lastName, lastSurname, lastEmail;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -111,18 +114,32 @@ public class MainFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                saveUser();
+                askConfirmation();
             }
         });
     }
 
-    private void saveUser() {
+    private void askConfirmation() {
         EditText name = (EditText) getActivity().findViewById(R.id.nameInput);
         EditText surname = (EditText) getActivity().findViewById(R.id.surnameInput);
         EditText email = (EditText) getActivity().findViewById(R.id.mailInput);
 
+        lastName = name.getText().toString();
+        lastSurname = surname.getText().toString();
+        lastEmail = email.getText().toString();
+
+        SharedPreferences.Editor ed = prefs.edit();
+        ed.putString("txtDialog", "Name: " + lastName + "\nSurname: " + lastSurname + "\nEmail: " + lastEmail);
+        ed.apply();
+
+        android.app.DialogFragment dialog = new DialogFragment();
+        dialog.show(getFragmentManager(), "fragment_main");
+    }
+
+    public void saveUser() {
         BaseDades bd = new BaseDades(getActivity().getApplicationContext());
-        bd.addUser(new Usuari(name.getText().toString(), surname.getText().toString(), email.getText().toString(), posToName[((NavigationDrawerFragment)getFragmentManager().findFragmentById(R.id.navigation_drawer)).actPos], 0));
+        bd.addUser(new Usuari(lastName, lastSurname, lastEmail, Calendar.getInstance().getTimeInMillis()));
+
     }
 
     private void restoreInfo() {

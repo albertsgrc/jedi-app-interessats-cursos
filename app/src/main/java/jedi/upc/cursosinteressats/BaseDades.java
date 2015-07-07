@@ -45,7 +45,7 @@ public class BaseDades extends SQLiteOpenHelper {
 
     public void addUser(Usuari user) {
         String query = "INSERT INTO " + USER_TABLE + " VALUES("
-                + "'" + user.email + "','" + user.name + "','" + user.surnames + "','" + user.course_id + "',CURRENT_TIMESTAMP)";
+                + "'" + user.email + "','" + user.name + "','" + user.surnames + "',CURRENT_TIMESTAMP)";
 
         this.getWritableDatabase().execSQL(query);
     }
